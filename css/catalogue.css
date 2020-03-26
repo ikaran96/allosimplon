@@ -1,0 +1,155 @@
+.axeltitreh2 {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF7200;
+    box-shadow: 2px 4px 5px black;
+}
+
+.axelcontainer {
+    width: 100%;
+    display: flex;
+}
+
+
+.axelgauche {
+    background-color: #FF7200;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.axelH5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.axelgenre {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.axelcase {
+    margin: 5px;
+}
+
+
+/*LIGHTBOX*/
+
+.axeldroite {
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    justify-content: center;
+    padding-bottom:30px;
+}
+
+
+.cardaxel {
+    position:relative;
+    width: 100px;
+    height:135px;
+    margin:10px;
+    margin-bottom:40px;
+}
+
+
+
+
+.versfilm{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+.titrefilm{
+    color:white;
+    text-align:center;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-top:5px;
+    font-size:15px;
+}
+
+.infoaxel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.textaxel {
+    color: black;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1000px){
+
+
+    .axelgauche{
+        width:10%;
+    }
+
+    .axeldroite{
+        width:90%;
+      
+    }
+
+    .axeltitreh2{
+        margin-top:30px;
+    }
+
+    .cardaxel{
+        width:300px;
+        height:405px;
+        border-radius:10px;
+    }
+
+    .cardaxel:hover .infoaxel {
+        opacity: 0.8;
+    }
+    
+    .infoaxel{
+        top:90%;
+        height:10%;
+    }
+
+    .textaxel{
+        display: flex;
+        justify-content: space-evenly;
+        width:100%;
+        font-size:15px;
+        
+    }
+}

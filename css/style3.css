@@ -1,0 +1,1200 @@
+.style_switcher{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding-top: 10px;
+  }
+  
+  
+  
+  .style_ilayda {
+    height: 5px;
+    width: 10px;
+    display: block;
+    background-color: white;
+  }
+  
+  .style_axel {
+    height: 5px;
+    width: 10px;
+    display: block;
+    background-color: pink;
+  }
+  
+  .style_pol {
+    height: 5px;
+    width: 10px;
+    display: block;
+    background-color: blue;
+  }
+  
+  .style_steven {
+    height: 5px;
+    width: 10px;
+    display: block;
+    background-color: green;
+  }
+
+body {
+  background-color: blue !important;
+}
+
+
+
+/* Style catalogue */
+
+.axeltitreh2 {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF7200;
+    box-shadow: 2px 4px 5px black;
+}
+
+.axelcontainer {
+    width: 100%;
+    display: flex;
+}
+
+
+.axelgauche {
+    background-color: #FF7200;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.axelH5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.axelgenre {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.axelcase {
+    margin: 5px;
+}
+
+
+/*LIGHTBOX*/
+
+.axeldroite {
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    justify-content: center;
+}
+
+
+.cardaxel {
+    position:relative;
+    width: 100px;
+    height:135px;
+    margin:10px;
+    margin-bottom:40px;
+}
+
+
+.cardaxel:hover .infoaxel {
+    opacity: 0.8;
+}
+
+.versfilm{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+.titrefilm{
+    color:white;
+    text-align:center;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-top:5px;
+    font-size:15px;
+}
+
+.infoaxel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.textaxel {
+    color: black;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+@media only screen and (min-width:1000px){
+
+
+    .axelgauche{
+        width:15%;
+    }
+
+    .axeldroite{
+        width:85%;
+    }
+
+    .axeltitreh2{
+        margin-top:30px;
+    }
+
+    .cardaxel{
+        width:300px;
+        height:405px;
+        border-radius:10px;
+    }
+
+    .infoaxel{
+        top:90%;
+        height:10%;
+    }
+
+    .textaxel{
+        display: flex;
+        justify-content: space-evenly;
+        width:100%;
+        font-size:15px;
+        padding-bottom:60px;
+    }
+}
+
+
+
+/* Style index */
+
+body{
+    background-color: #121111;
+}
+
+.nav-dada{
+    display:none;
+}
+
+.vide{
+    display:none;}
+
+/*----------------------------------------------------------TOGGLE----------------------------------------------------------*/
+
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index:2;
+    cursor: pointer;
+    width:50px;
+    height: 50px;
+    opacity:0;
+
+}
+
+.menu-wrap .hamburger{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:20px;
+    padding:1rem;
+    background: #FF7200;
+    display:flex;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 10px;
+    margin:5px;
+
+
+}
+
+
+/*HAMBURGER LINE*/
+
+
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.4s ease;
+}
+
+/*TOP AND BOTTOM LINES*/
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content:"";
+    position: absolute;
+    z-index:1;
+    top: -10px;
+    width:100%;
+    height: 2px;
+    background-color: inherit;
+}
+
+/*MOVES LINE DOWN*/
+
+.menu-wrap .hamburger > div:after {
+    top:10px;
+}
+
+/*TOGGLER ANIMATE*/
+
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+
+}
+
+/* TURNS LINES INTO */
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after{
+    top:0;
+    transform:rotate(90deg);
+}
+
+
+/*SHOW MENU*/
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+
+.menu-wrap .toggler:checked ~ .menu > div {
+transform: scale(1);
+transition-duration: 0.3s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity:1;
+    transition: opacity 0.3s ease;
+}
+
+
+.menu-wrap .menu{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.menu-wrap .menu > div {
+    background-color: black;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 100%;
+    max-height: 1100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+
+
+.menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color:#FF7200;
+    font-size:35px;
+    padding:20px;
+    margin-right: 20px;
+
+
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color:#FF7200;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+input{
+    border: 5px solid #FF7200;
+    background-color: black;
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.search-button{
+    background-color:#FF7200;
+    border:5px solid #FF7200;
+}
+
+.search-button:hover{
+    background-color:white;
+    border:5px solid white;
+}
+
+
+/*----------------------------------------------------------TITRE----------------------------------------------------------*/
+
+
+.title-dada h1{
+    text-align: center;font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:35px;
+    font-weight:600;
+    color:#FF7200;
+
+}
+
+.title-dada h1 a {
+    text-decoration:none;
+
+}
+.title-dada h1 a:visited {
+    color:#FF7200;
+
+}
+
+
+
+
+
+
+/*----------------------------------------------------------SLIDER----------------------------------------------------------*/
+
+
+
+
+
+.fotorama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----------------------------------------------------------CAROUSEL----------------------------------------------------------*/
+
+.slider {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 800px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  z-index:30;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/*----------------------------------------------------------AFFICHE----------------------------------------------------------*/
+
+.title-dada-affiche{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-top:20px;
+    font-size:30px;
+    font-weight:600;
+    color:#FF7200;
+
+}
+
+/*----------------------------------------------------------PARALLAX DISPLAY NONE----------------------------------------------------------*/
+.container{display:none}
+
+/*----------------------------------------------------------IMG + TXT----------------------------------------------------------*/
+.img-txt{
+    width:100%;
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.img-txt img{
+    width:100%;
+}
+
+.img-txt p {
+    margin-top:10px;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+/*----------------------------------------------------------TARIFS----------------------------------------------------------*/
+
+
+
+.tarifs-dada{
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:50px;
+  }
+
+  .tarifs-dada > h2{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-top:20px;
+    font-size:30px;
+    font-weight:600;
+    color:#FF7200;
+
+
+  }
+
+  .all-tarifs{
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+
+  }
+
+
+  .titre-prix {
+    font-family: "Baloo Tammudu 2", Arial, Helvetica, sans-serif;
+    background-color:#FF7200;
+    color:black;
+    margin-bottom:0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    padding-top:10px;
+    font-size:25px;
+
+  }
+
+  .prix-dada{
+    margin-top:0px;
+    background-color:black;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom:50px;
+    height:auto;
+    padding-top:10px;
+    padding-bottom:6px;
+
+  }
+
+  .para-prix{
+    font-size:20px;
+    line-height:50px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .gros-prix{
+      font-weight:900;
+      color:white;
+      text-shadow: 2px 2px 0px #FF7200;
+      font-size:40px;
+  }
+
+/*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+
+.col1,
+.col2,
+.col3 {
+    margin-top: 30px;
+}
+
+.col1>img,
+.col2>img,
+.col3>img {
+    margin-bottom: 30px;
+}
+
+FOOTER {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:black;
+    padding-top:30px;
+    padding-bottom:30px;
+    color:white;
+
+}
+
+footer>p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.title-footer {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.copy {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+
+  @media only screen and (min-width:768px){
+
+
+    .img-txt{
+        display:flex;
+        width:100%;
+        margin-top:50px;
+    }
+
+    .img-txt img{
+        width:50%;
+    }
+    .img-txt p {
+        width:40%;}
+
+
+/*----------------------------------------------------------TARIFS----------------------------------------------------------*/
+
+
+   .all-tarifs{
+       display:flex;
+       width:100%;
+       justify-content: space-evenly;
+   }
+
+   .dada-flex{
+       width:30%;
+
+   }
+
+
+/*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+
+   .col-img1,
+    .col-img2,
+    .col-img3 {
+        height: 600px;
+    }
+
+    .col-img1>p,
+    .col-img2>p,
+    .col-img3>p {
+        padding-top: 300px;
+        font-size: 30px;
+    }
+
+
+    .footer-3 {
+        display: flex;
+        width: 90%;
+        padding-bottom: 30px;
+
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .col-footer {
+        display: flex;
+        padding-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+  }
+
+@media only screen and (min-width:1000px){
+
+    .menu-wrap{
+        display:none;
+    }
+
+    .title-dada{
+        display:none;
+    }
+/*----------------------------------------------------------NAV BAR----------------------------------------------------------*/
+
+.nav-dada{
+    display:block;
+    width:100%;
+    height:60px;
+    background-color:black;
+    position:fixed;
+    z-index:100;
+    padding-top:15px;
+
+}
+
+
+.vide{
+    display:block;
+    height:60px;
+}
+
+.logo-dada{
+    width:30%;
+    float:left;
+    font-family:"Baloo Tammudu 2", Arial, Helvetica, sans-serif;
+    font-size:40px;
+    padding-top:15px;
+    padding-left:30px;
+    font-weight:900;
+    color:#FF7200;
+}
+
+.menu-dada{
+    width:90%;
+}
+
+.menu-dada ul{
+    float:right;
+    list-style:none;
+
+}
+
+.menu-nav{
+    overflow:hidden;
+
+}
+
+.menu-nav ul li{
+    display: inline-block;
+}
+
+.menu-nav ul li a{
+    display:inline-block;
+    text-decoration:none;
+    color:#FF7200;
+     font-family:"Baloo Tammudu 2", Arial, Helvetica, sans-serif;
+     padding-top:15px;
+     padding-left:20px;
+     padding-right:20px;
+     font-size:20px;
+     font-weight:700;
+}
+
+.menu-nav ul li a:hover{
+color:white;
+}
+
+.search-bar{
+    float:right;
+    margin-right:30px;
+    margin-top:5px;
+}
+
+
+.lien-home {
+    text-decoration: none;
+    color:#FF7200;
+}
+
+.lien-home:hover{
+    color:white;
+}
+
+
+
+/*----------------------------------------------------------SLIDER----------------------------------------------------------*/
+
+.fotorama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+
+/*----------------------------------------------------------CAROUSEL----------------------------------------------------------*/
+
+.slider{
+    width:50%;
+}
+
+/*----------------------------------------------------------PARALLAX----------------------------------------------------------*/
+
+.container {
+    display:block;
+  max-width:100%;
+  margin:0 auto;
+  background:black;
+  font-size:30px;
+}
+
+.parallax{
+    background: url('img/parallax.jpeg') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:200px;
+}
+
+
+.parallax2{
+    background: url('img/parallax2.jpg') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height:200px;
+}
+
+/*----------------------------------------------------------IMG TXT----------------------------------------------------------*/
+
+.img-txt{
+    margin:0;
+}
+
+p{
+    padding-top:70px;
+}
+
+/*----------------------------------------------------------TARIFS----------------------------------------------------------*/
+
+
+
+.all-tarifs{
+    width:90%;
+}
+
+.dada-flex{
+    width:30%;
+
+}
+/*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+
+
+
+.col-img1,
+    .col-img2,
+    .col-img3 {
+        height: 100vh;
+        text-align: center;
+    }
+
+    .col-img1>p,
+    .col-img2>p,
+    .col-img3>p {
+        padding-top: 50vh;
+        font-size: 500%;
+    }
+
+    .footer-3{
+        justify-content: space-evenly;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        width: 20%;
+        font-size: 25px;
+    }
+
+    .title-footer{
+        font-size:20px;
+    }
+
+    .col-footer{
+        justify-content: center;
+    }
+
+.col-footer >div{
+    width:20%;
+    margin:20px;
+
+}
+
+
+
+}
+
+/* style parasite  */
+
+/*TITRE FILM*/
+
+
+
+.titrefilm{
+    text-align: center;font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:35px;
+    font-weight:600;
+    color:#FF7200;
+
+}
+
+/*SYNOPSIS*/
+
+
+.img-resume{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    background-color: black;
+
+}
+
+.img-film{
+    width:100%;
+}
+
+.synop{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-top:20px;
+    margin-bottom:50px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30px;
+}
+
+.synop p {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:30px;
+
+}
+
+
+/*RESUME*/
+
+
+.rond-titre{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:20px;
+
+}
+
+.ronds-info{
+    display:flex;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: space-evenly;
+
+}
+
+.ronds-ronds{
+    background-color: #FF7200;
+    height:90px;
+    width:90px;
+    margin:10px;
+    border-radius:50%;
+    text-align: center;
+    color:black;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    line-height:90px;
+    font-weight:700;
+
+
+}
+
+.ronds-bis{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+
+}
+
+
+/*ACTEURS*/
+
+
+.acteurs-titre{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-top:40px;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: black;
+}
+
+.liste-acteurs{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+}
+
+.acteur{
+    width:20%;
+    margin:20px;
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size:10px;
+    text-align: center;
+    position: relative;
+
+}
+
+.acteur img{
+    width:90px;
+    margin-bottom:10px;
+
+}
+
+/*REAL BA*/
+
+.real-real{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:30px;
+    margin-top:40px;
+}
+
+.real-ba{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+
+.real{
+    display: flex;
+    margin-right:auto;
+    margin-left:auto;
+    width:90%;
+    justify-content: space-between;
+    text-align: justify;
+
+}
+
+.img-real{
+    width:30%;
+    font-size:15px;
+    text-align: center;
+    margin-bottom:70px;
+}
+
+.img-real >img{
+    width:90px;
+}
+
+.img-real > div{
+    font-size:13px;
+    text-align: center;
+    margin:10px;
+}
+
+.text-real{
+    width:70%;
+    line-height: 20px;
+}
+
+
+.ba-yt{
+    text-align: center;
+}
+
+@media only screen and (min-width:1000px){
+
+
+    /*TITRE FILM*/
+
+
+    .titrefilm{
+        margin-top:50px;
+        font-size:50px;
+    }
+
+    /*SYNOPSIS*/
+
+    .img-resume{
+        display:flex;
+    }
+
+    .img-film{
+        width:50%;
+    }
+
+.synop{
+    width:40%;
+    margin-top:0px;
+    font-size:20px;
+    text-align: justify;
+}
+
+.synop p {
+    font-size:40px;
+}
+
+/*RESUME*/
+
+
+.rond-titre{
+    font-size:40px;
+}
+
+.ronds-ronds{
+    height:150px;
+    width:150px;
+    line-height:150px;
+    font-size:25px;
+    margin-bottom:30px;
+
+}
+.ronds-bis{
+    font-size:20px;
+}
+
+/*ACTEURS*/
+
+.acteurs-titre{
+    font-size:40px;
+}
+
+.liste-acteurs{
+    justify-content: space-evenly;
+}
+
+.acteur{
+    width:12%;
+}
+
+/*REAL BA*/
+
+.real-real{
+    font-size:40px;
+}
+
+.real-ba{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding-bottom:40px;
+}
+
+.real{
+    width:50%;
+    justify-content: space-evenly;
+}
+
+.ba-yt{
+    width:50%;
+}
+
+.text-real{
+width:40%;
+}
+
+.img-real{
+    width:10%;
+}
+
+
+
+}

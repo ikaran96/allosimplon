@@ -1,0 +1,363 @@
+/*TITRE FILM*/
+
+
+
+.titrefilm{
+    text-align: center;font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:35px;
+    font-weight:600;
+    color:#FF7200;
+
+}
+
+/*SYNOPSIS*/
+
+
+.img-resume{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    background-color: black;
+
+}
+
+.img-film{
+    width:100%;
+}
+
+.synop{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-top:20px;
+    margin-bottom:50px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30px;
+}
+
+.synop-title {
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:30px;
+    margin-top:30px;
+
+}
+
+
+/*RESUME*/
+
+
+.rond-titre{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:20px;
+
+}
+
+.ronds-info{
+    display:flex;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: space-evenly;
+
+}
+
+.ronds-ronds{
+    background-color: #FF7200;
+    height:90px;
+    width:90px;
+    margin:10px;
+    border-radius:50%;
+    text-align: center;
+    color:black;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    line-height:90px;
+    font-weight:700;
+
+
+}
+
+.ronds-bis{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin-bottom:10px;
+
+}
+
+
+/*ACTEURS*/
+
+
+.acteurs-titre{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-top:40px;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: black;
+}
+
+.liste-acteurs{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    padding-bottom:40px;
+}
+
+.acteur{
+    width:20%;
+    margin:20px;
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size:10px;
+    text-align: center;
+    position: relative;
+
+}
+
+.acteur img{
+    width:90px;
+    margin-bottom:10px;
+    
+}
+
+/*REAL BA*/
+
+.real-real{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight:600;
+    color:#FF7200;
+    margin-bottom:30px;
+    margin-top:40px;
+}
+
+.real-ba{
+    color:white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+
+.real{
+    display: flex;
+    margin-right:auto;
+    margin-left:auto;
+    width:90%;
+    justify-content: space-between; 
+    text-align: justify;
+
+}
+
+.img-real{
+    width:30%;
+    font-size:15px;
+    text-align: center;
+    margin-bottom:70px;
+}
+
+.img-real >img{
+    width:90px;
+}
+
+.img-real > div{
+    font-size:13px;
+    text-align: center;
+    margin:10px;
+}
+
+.text-real{
+    width:70%;
+    line-height: 20px;
+}
+
+
+.ba-yt{
+    text-align: center;
+}
+
+@media only screen and (min-width:1000px){
+
+
+    /*TITRE FILM*/
+
+
+    .titrefilm{
+        margin-top:50px;
+        font-size:50px;
+    }
+
+    /*SYNOPSIS*/
+
+    .img-resume{
+        display:flex;
+    }
+
+    .img-film{
+        width:50%;
+    }
+
+.synop{
+    width:40%; 
+ 
+
+}
+
+.synop-title {
+    font-size:40px;
+ 
+}
+
+.synop-ok{
+    font-size:20px;
+    text-align: justify;
+    font-weight:100;
+    margin-bottom:auto;
+
+}
+
+/*RESUME*/
+
+
+.rond-titre{
+    font-size:40px;
+}
+
+.ronds-ronds{
+    height:150px;
+    width:150px;
+    line-height:150px;
+    font-size:25px;
+    margin-bottom:30px;
+   
+}
+.ronds-bis{
+    font-size:20px;
+    transition:0.5s;
+}
+
+.ronds-bis:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    transition:0.5s;
+}
+
+/*ACTEURS*/
+
+.acteurs-titre{
+    font-size:40px;
+}
+
+.liste-acteurs{
+    justify-content: space-evenly;
+}
+
+.acteur{
+    width:12%;
+    transition: .3s ease;
+    
+}
+
+.acteur:hover{
+    transform:scale(1.1);
+    transition: .3s ease;
+
+}
+
+.acteur img{
+    transition: .5s ease;
+    border-radius:10px;
+}
+
+.acteur img:hover{
+    transform: scale(1.1);
+    transform: translateY(-5px);
+    cursor:pointer;
+    transition: .5s ease;
+}
+
+/*REAL BA*/
+
+.real-real{
+    font-size:40px;
+}
+
+.real-ba{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    padding-bottom:40px;
+}
+
+
+.real{
+    width:50%;
+    justify-content: center;
+}
+
+
+
+
+.ba-yt{
+    width:50%;
+}
+
+iframe{
+    border-radius: 25px;
+}
+
+.text-real{
+width:50%;
+margin-top:auto;
+margin-bottom:auto;
+font-size:20px;
+font-weight:100;
+}
+
+.img-real{
+    width:50%;
+    margin-top:auto;
+margin-bottom:auto;
+transition: .3s ease;
+}
+
+.img-real img:hover{
+    transform: scale(1.1);
+    transform: translateY(-5px);
+    cursor:pointer;
+    transition: .5s ease;
+}
+
+.img-real img{
+    transition: .5s ease;
+    border-radius:10px;
+}
+
+.img-real:hover{
+    transform:scale(1.1);
+    transition: .3s ease;
+}
+
+
+
+}

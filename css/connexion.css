@@ -1,0 +1,58 @@
+#container{
+    margin-bottom:50px;
+    color:white;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color: black;
+    padding-bottom:50px;
+
+}
+
+h2{
+    font-weight:600;
+    font-size:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.login{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+label{
+    padding-right:20px;
+}
+
+@media only screen and (min-width:768px){
+#container{
+    width:50%;
+}
+}
+
+@media only screen and (min-width:1000px){
+#container{
+    margin-top:50px;
+    width:30%;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-right:50px;
+    padding-left:50px;
+
+    
+}
+
+.ok{
+    background-color:#FF7200;
+    color:black;
+    font-weight:700;
+}
+.ok:hover{
+    background-color: white;
+    border: 5px solid white;
+}
+
+
+}
